@@ -11,14 +11,28 @@ input, button, textarea, select { font: inherit }
 /* ================= ENDS ================ */
 
 /* Desktops */
-@media (min-width: 768px) { body { padding: 4% 20% } }
+@media (min-width: 1025px) { section { padding: 5% 6%; text-align: center; } }
 	
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 6%; text-align: center; } }
+
 /* Mobiles */
-@media (max-width: 767px) { body { padding: 12% 8% } }
+@media (max-width: 767px) { 
+    section { 
+        padding: 12% 8%;
+        text-align: center;
+    } 
+}
 
 body { 
     text-align: center;
     font-family: sans-serif;
+}
+.mary{
+    height: 300px;
+    width: 100px;
+    margin: auto;
+    border-radius: 63px;
 }
 
 h1 {
