@@ -14,7 +14,8 @@ section > * { margin-left: 0 }
     flex-direction: column;
     justify-content: space-between;
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 22%;
+    border-radius: 15px;
 }
 
 .bono p, .edge p, .adam p, .larry p{
@@ -68,6 +69,7 @@ button{
     background-color: lightgreen;
     color: black;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 button:hover{
@@ -79,3 +81,10 @@ button:active{
     background-color: blue;
     color: white;
 }
+
+.bono img, .edge img, .adam img, .larry img {
+    width: calc(100% + 40px);
+    margin: -20px -20px 16px -20px;
+    border-radius: 15px;
+}
+
