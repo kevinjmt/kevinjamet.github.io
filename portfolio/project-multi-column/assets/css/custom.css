@@ -1,0 +1,59 @@
+.section-selector-1 { background-color: var(--lime-400) }
+
+.cols-2-half .col-2 h2 {
+	font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1140 - 320)));
+	margin-bottom: 20px;
+	letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--slate-300) }
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--slate-200) }
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--gray-100) }
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--gray-200) }
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--gray-300) }
+.theme-light.section-selector-2 div[class^='flex-cols-'] div[class^='col-'] { border-color: var(--gray-300) }
+
+.section-selector-3 .col-1 h2 { color: var(--sky-300) }
+.section-selector-3 .col-1 h3 { color: var(--slate-200) }
+.section-selector-3 { background-color: var(--trend-800) }
+.section-selector-3 div[class^='flex-cols-'] div[class^='col-'] h3 { color: var(--slate-200) }
+.section-selector-3 div[class^='flex-cols-'] div[class^='col-'] { background-color: var(--trend-700) }
+.section-selector-3 div[class^='flex-cols-'] div[class^='col-'] figure.icon { color: var(--sky-300) }
+
+.section-selector-3 {
+	background-image: linear-gradient(to top right, #0f172a, #1c2c51);
+	font-family: 'Inter', sans-serif;
+ }
+
+ .section-selector-3 .col-1 h2 { font-weight: 200 }
+.section-selector-3 .col-3 h3 { font-weight: 400 }
+
+.section-selector-3 .flex-cols-3 > .col-3 > figure.icon.icon-small i[class^="la"] {
+    font-size: 60px;
+    margin-bottom: -24px !important;
+}
+
+.section-selector-3 .cols-padding div[class^="col-"] figure.icon-left i { margin-left: 16px }
+.section-selector-3 div[class^="col-"] figure.icon { margin-bottom: 20px }  
+
+.section-selector-3 .col-1 > h2 {
+    font-size: calc(28px + (64 - 28) * ((100vw - 320px) / (1140 - 320)));
+}
+
+.section-selector-4{
+    
+}
+
+.section-selector-1 { background-color: var(--slate-050) }
+.section-selector-1 .col-1 h2 span.highlight { color: var(--red-600) }
+
+
+.section-selector-6{
+    
+}
+
+/* change only 1 child color */
+/*nth-child(1) {
+	background-color: var(--slate-050);
+}*/
