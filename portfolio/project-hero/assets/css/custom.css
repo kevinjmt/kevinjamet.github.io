@@ -172,3 +172,71 @@
     font-weight: 400;
     font-size: calc(60px + (98 - 60) * ((100vw - 320px) / (1600 - 320)));
 }
+
+
+#hero-7 header.theme-dark { background-color: var(--trend-800) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):link,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):visited { color: var(--white-000) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):active { color: var(--white-000) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):link,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--blue-500) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):active { background-color: var(--red-600) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):link,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--blue-500) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(1):active { border-color: var(--red-600) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):link,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):visited { color: var(--blue-300) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):active { color: var(--rose-600) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):active { background-color: var(--trend-800) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):link,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--blue-300) }
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):focus,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):hover,
+#hero-7 header.theme-dark .container-btn a.btn:nth-child(2):active { border-color: var(--red-600) }
+
+#hero-7 header.theme-light h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+#hero-7 header.theme-light h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#hero-8 header.theme-light h1 span.highlight { color: var(--green-500) }
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):link,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):visited { color: var(--green-500) }
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):focus,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):hover,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):active { color: var(--white-000) }
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):focus,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):hover,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):active { background-color: var(--green-500) }
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):link,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):visited { border-color: var(--green-500) }
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):focus,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):hover,
+#hero-8 header.theme-light .container-btn a.btn:nth-child(1):active { border-color: var(--green-500) }
+
+#hero-8 header.theme-light h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+#hero-8 header.theme-light h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
