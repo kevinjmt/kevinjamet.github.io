@@ -18,8 +18,26 @@
     gtag('config', 'G-XXKYVBYTQ6');
     </script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#000"
+        },
+        "button": {
+        "background": "#f1d600"
+        }
+    },
+    "content": {
+        "href": "https://kevinjmt.github.io/privacy.html"
+    }
+    });
+    </script>
     <img src="assets/imgs/Mary-Smith.jpg" alt="Mary Smith" class="mary">
     <h1>Hi, I'm Mary Smith</h1>
     <h2>Web / UI Designer</h2>
