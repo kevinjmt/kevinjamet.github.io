@@ -8,6 +8,9 @@ nav.theme-dark,
 nav.theme-dark ul.links-wrapper.active { background-color: var(--trans-000) }
 nav.theme-dark .nav-toggle { background-color: var(--trans-000) }
 header h1 {
-    font-size: var(--font-size-xxxl);
+    font-size: 200px;
     line-height: 1.2;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
 }
