@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sapiente aliquid quos culpa, sed itaque eveniet. Excepturi libero possimus reprehenderit laboriosam ad dolorum dolores fugiat recusandae? Molestias facere possimus sunt.</p>
+    <script>
+        let caca = "pipi";
+        console.log(caca);
+
+        let price = 0;
+        console.log(price);
+        price = 10;
+        console.log(price);
+
+        function upprice(){
+            price += 1
+        }
+        upprice()
+        console.log(price);
+
+        let prout = "caca"
+        console.log("j'ai fait " + price + " " + prout)
+
+        function sum(a, b){
+            return (a+b)
+        }
+        let result = sum(1,2);
+        console.log(result)
+        const call = function (){
+            console.log("auto called")
+        }();
+
+        function loop(){
+            for (i = 0; i < 20; i++){
+                document.write(`| ${i} `)
+            }
+            document.write("|")
+        }
+        loop()
+
+        const arr = ['caca', 'prout', 'pipi'];
+        for (i = 0; i < 3; i++){
+            console.log(`arr -> ${arr[i]}`);
+        }
+    </script>
+</body>
+</html>

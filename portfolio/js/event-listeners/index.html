@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Button with id and class -->
+    <button id="btn_1">Click me OwO</button>
+
+    <script>
+        // option 1
+        // Get button from web page
+        const btn_1 = document.getElementById('btn_1');
+
+        // Attach external function declaration to listen to button.
+        // Function is called when btn_1 has 'click' event.
+        // NOTE: No parenthesis () after function name.
+        btn_1.addEventListener('click', showBtnClick);
+
+        // External function called by 'click' event.
+        function showBtnClick() {
+            console.log(`You clicked the button.`);
+        }
+
+        // option 2
+        // Create anonymous function inside 'click' event listener
+        // NOTE: Anonymous function keyword includes parenthesis ()
+        btn_1.addEventListener('click', function() {
+            console.log(`You clicked the button.`);
+        });
+        // } closes anonymous function
+        // ); closes statement containing listener method
+        
+        // option 3
+        // Attach 'click' listener arrow function to button
+        btn_1.addEventListener('click', () => {
+            console.log(`You clicked the button.`);
+        });
+
+        // option 4
+        // Get button and attach 'click' listener arrowfunction to it.
+        document.getElementById('btn_1').addEventListener('click', () => {
+            console.log(`You clicked the button.`);
+        });
+    </script>
+</body>
+</html>

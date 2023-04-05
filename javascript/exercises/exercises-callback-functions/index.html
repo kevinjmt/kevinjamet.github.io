@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+    // Working with three functions
+        function first() {
+            console.log("1");
+        }
+                            
+        function second() {
+            setTimeout(() => {
+                // JavaScript waits 5 seconds before executing the next line
+                // Emulates delayed response from remote server
+                console.log("2");
+                // Execute the callback function below after previous line executed
+                //callback();
+            }, 5000); // Ends inner function wrapped in timer 
+        } // Ends outer parent function with parameter 
+                            
+        function third() {
+            console.log("3");
+        }
+        
+        // Call first function directly
+        first();
+        // Call second function with third function passed as argument
+        second();
+        third();
+        */
+
+        
+        // Working with three functions
+        function first() {
+            console.log("1");
+        }
+                            
+        function second(callback) {
+            setTimeout(() => {
+                // JavaScript waits 5 seconds before executing the next line
+                // Emulates delayed response from remote server
+                console.log("2");
+                // Execute the callback function below after previous line executed
+                callback();
+            }, 5000); // Ends inner function wrapped in timer 
+        } // Ends outer parent function with parameter 
+                            
+        function third() {
+            console.log("3");
+        }
+
+        // Call first function directly
+        first();
+        // Call second function with third function passed as argument
+        second(third);
+    </script>
+</body>
+</html>

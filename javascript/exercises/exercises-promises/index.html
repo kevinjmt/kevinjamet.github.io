@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        // Create a promise
+        const myPromise = new Promise(function(myResolve, myReject) {
+        // Code to communicate to remote server goes here. May take some time.
+            myResolve(); // function to handle successful completion
+            myReject();  // function to handle error
+        });
+        */
+    
+    const myPromise = new Promise(function(myResolve, myReject) {
+        const x = 0;
+        
+        // The code that may take some time
+        if (x === 0) {
+            myResolve("Yay. Success.");
+        } else {
+            myReject("Oh, no. An error has occurred");
+        }
+    });
+        
+    myPromise.then(
+        function(value) {console.log(value) },
+        function(error) { console.log(error) }
+    );
+    </script>   
+</body>
+</html>

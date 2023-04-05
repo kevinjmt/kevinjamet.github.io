@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Two input numbers -->
+    <p>First Number <span id="num_1">10</span></p>
+    <p>Second Number <span id="num_2">4</span></p>
+    
+    <!-- Four buttons to perform arithmetic -->
+    <button id="btn_1">+</button>
+    <button id="btn_2">-</button>
+    <button id="btn_3">*</button>
+    <button id="btn_4">/</button>
+    
+    <!-- Calculation result -->
+    <p>Result: <span id="num_result"></span></p>
+
+    <script>
+        // Get all web page buttons and place in a nodelist
+        const nodeListButtons = document.getElementsByTagName('button');
+        
+        // Convert nodelist to an array
+        const arrButtons = Array.from(nodeListButtons);
+        
+        // Loop through array 
+        arrButtons.forEach(button => {
+            // Attach 'click' listener to each button
+            button.addEventListener('click', e => {
+                // Arrow function that responds to click event
+                console.log(`You clicked the button with an id of: ${e.target.id}`);
+            }) // ends adding listeners with arrow function
+        }); // ends forEach loop
+
+        // External function called by 'click' event.
+        doOperation(e.target.id);
+
+        // Function to perform arithmetic and display result.
+        function doOperation(op) {
+            // Get numbers from web page and convert string to integer
+            const num_1 = parseInt(document.getElementById('num_1').textContent);
+            const num_2 = parseInt(document.getElementById('num_2').textContent);
+            let num_result;
+            //  Get only number character from string passed as argument	
+            op = op.replace("btn_", "");
+            //  Convert number character to numeric variable
+            op = parseInt(op);
+
+            //  Branch according to passed argument with strict equality operator	
+            if (op === "1") { num_result = num_1 + num_2 } 
+            else if (op === "2") { num_result = num_1 - num_2 } 
+            else if (op === "3") { num_result = num_1 * num_2 } 
+            else if (op === "4") { num_result = num_1 / num_2 }
+
+            //  Display result	
+            document.getElementById('num_result').textContent = num_result;
+        }
+
+    </script>
+</body>
+</html>

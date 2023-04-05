@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Increment and decrement elements -->
+    <p><a href="#" class="btn-link link-increment">Increase</a></p>
+    <p><a href="#" class="btn-link link-decrement">Decrease</a></p>
+    <p>Output: <span id="output">0</span></p>
+
+    <script>
+        // Get all hyperkinks with this class name
+        const nodeListLinks = document.querySelectorAll('.btn-link');
+
+        // Convert nodelist to an array
+        const arrLinks = Array.from(nodeListLinks);
+
+        // Loop through array
+        arrLinks.forEach(link => {
+            // Attach 'click' listener to each link
+            link.addEventListener('click', e => {
+                // Arrow function that responds to click event
+                if (e.target.className.includes("increment")) {
+                    document.getElementById('output').textContent = parseInt(document.getElementById('output').textContent) + 1;
+                } 
+                else if (e.target.className.includes("decrement")) {
+                    document.getElementById('output').textContent = parseInt(document.getElementById('output').textContent) - 1;
+                }
+            }); // ends adding listeners with arrow function
+        }); // ends forEach loop
+
+
+        // Listen for any key being pressed
+        document.addEventListener('keypress', e => {
+        if (event.key === 'r') {
+            document.body.style.backgroundColor = 'red';
+            } else if (event.key === 'g') {
+                document.body.style.backgroundColor = 'green';
+            } else if (event.key === 'b') {
+                document.body.style.backgroundColor = 'blue';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Some heading here</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium explicabo similique optio neque, ipsum ducimus minima cumque eos molestiae laboriosam debitis. Amet ea cum praesentium quia pariatur doloremque atque quod!</p>
+    <div id="outerDIV">
+        <button id="bigBtn">Change background to RED SHADOW LEGENDS</button>
+    </div>
+
+    <script>
+        const outerDIV = document.getElementById('outerDIV')
+        const bigBtn = document.getElementById("bigBtn");
+
+        // Event listener executed during the capturing (first, down) phase.
+        outerDIV.addEventListener('click', () => {
+            console.log(`Capture phase: click event on outer div - but action executed`);
+            document.body.style.backgroundColor= 'red';
+        });
+
+        // Event listener executed during the bubble (second, up) phase.
+        outerDIV.addEventListener('click', () => {
+            console.log(`Capture phase: click event on outer div - but action executed`);
+            document.body.style.backgroundColor= 'red';
+        });
+
+        // Event listener executed during the bubbling (second, up) phase.
+        bigBtn.addEventListener('click', (e) => {
+            console.log('Capture phase: click event on button - but action executed');
+            console.log('Bubble phase:  action now executed');
+            e.stopPropagation();
+            document.body.style.backgroundColor= 'green';
+        },false);
+
+
+        const button = document.querySelector('button');
+
+		button.addEventListener('click', function(event) {
+		event.stopPropagation(); // prevent event from bubbling up
+		console.log('Button clicked');
+		});
+			
+		document.addEventListener('click', function() {
+		console.log('Document clicked');
+		});
+    </script>
+</body>
+</html>
